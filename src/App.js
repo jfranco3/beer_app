@@ -22,7 +22,7 @@ componentDidMount() {
       <ol>
         {this.state.arrayOfBeer.map((beer, index) => {
         return <li key={index}>
-          <h3>{beer.name}</h3>{beer.brewers_tips}</li>;
+          <h3>{beer.name}</h3>{beer.brewers_tips}{beer.food_pairing}</li>;
       })}
       </ol>
     </div>
