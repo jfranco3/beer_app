@@ -12,6 +12,10 @@ code {
     monospace;
 }
 
+h2 {
+  text-align: center;
+}
+
 li {
   color: rgb(170, 126, 45);
 }

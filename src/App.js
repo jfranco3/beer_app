@@ -16,17 +16,26 @@ class App extends React.Component {
       .then((arrayOfBeer) => this.setState({ arrayOfBeer }));
   }
 
+  handleClick = () => {
+    alert("You Like This Beer");
+  };
+
   render() {
     return (
       <div>
-        <h2>Your Component Works</h2>
+        <h2>BEERS</h2>
         <ol>
           {this.state.arrayOfBeer.map((beer, index) => {
             return (
               <li key={index}>
                 <h3>{beer.name}</h3>
-                <strong>Tips: </strong>{beer.brewers_tips}
-                <p><strong>Food Pairing: </strong>{beer.food_pairing}</p>
+                <strong>Tips: </strong>
+                {beer.brewers_tips}
+                <p>
+                  <strong>Food Pairing: </strong>
+                  {beer.food_pairing}
+                </p>
+                <button onClick={this.handleClick}>Like This Beer</button>
               </li>
             );
           })}
