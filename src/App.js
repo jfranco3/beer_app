@@ -35,7 +35,14 @@ class App extends React.Component {
                   <strong>Food Pairing: </strong>
                   {beer.food_pairing}
                 </p>
-                <button onClick={this.handleClick}>Like This Beer</button>
+                <p>
+                  <strong>ABV: </strong>
+                  {beer.abv}
+                </p>
+                <button onClick={this.handleClick}>
+                  Click to Like This Beer
+                </button>
+                <hr></hr>
               </li>
             );
           })}
