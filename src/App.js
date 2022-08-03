@@ -8,6 +8,17 @@ class App extends React.Component {
     };
   }
 
+
+
+
+
+
+
+
+
+
+
+  
   componentDidMount() {
     fetch("https://api.punkapi.com/v2/beers")
       .then((response) => {
